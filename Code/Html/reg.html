@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="s.css">
+	<title>Register_page</title>
+</head>
+<body>
+	<div class="container">
+		<div class="title">Registration</div>
+		<form action="data.php" method="POST">
+			<div class="user_details">
+				<div class="input-details">
+					<span class="details">Full Name</span>
+					<input type="text" placeholder="Enter your full name" name="name" required/>
+				</div>
+
+				<div class="input-details">
+					<span class="details">Age</span>
+					<input type="number" placeholder="Enter your age" min="18" max="35" step="1" name="age" required/>
+				</div>
+
+				<div class="input-details">
+					<span class="details">Qualification</span>
+					<input type="text"  placeholder="Enter your Qualification" name="qualification" required/>
+				</div>
+
+
+				<div class="input-details">
+					<span class="details">Marks</span>
+					<input type="number" name="marks" placeholder="Enter your marks" min="35" max="100" step="1" required/>
+				</div>
+
+				<div class="input-details">
+					<span class="details">Contact Number</span>
+					<input type="number" name="phno" placeholder="Enter your number" pattern="[0-9]{10}"/>
+				</div>
+
+				<div class="input-details">
+					<span class="details">Email Id</span>
+					<input type="email" name="email" placeholder="Enter your email id"/>
+				</div>
+
+				<div class="input-details">
+					<span class="details">Address</span>
+					<input type="text" name="address" placeholder="Enter your address"/>
+				</div>
+				
+
+				<div class="button">
+					<input class="b" type="submit" value="Register"/>
+				</div>
+
+			
+			</div>
+
+		</form>
+	</div>
+
+</body>
+</html>
