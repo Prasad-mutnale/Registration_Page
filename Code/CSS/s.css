@@ -1,0 +1,139 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+
+}
+
+body{
+    display: flex;
+    height:100vh;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+    background: linear-gradient(135deg,#11998e,#38ef7d);
+}
+
+
+
+.container{
+    max-width: 700px;
+    width:100%;
+    background-color: #fff;
+    padding: 25px 30px ;
+    border-radius: 5px;
+}
+.container .title{
+    font-size: 25px;
+    font-weight: 500px;
+    padding-bottom:10px;
+    position: relative;
+}
+
+.container .title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom:0;
+    height: 3px;
+    width: 30px;
+    
+
+
+}
+
+.container form .user_details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+
+}
+
+form .user_details .input-details{
+    margin-bottom:  15px;
+    width:calc(100% / 2 - 50px);
+}
+
+.user_details .input-details .details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+    
+}
+
+.user_details .input-details input{
+    height:45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border:1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+}
+
+
+
+.submit{
+    height:45px;
+    width: 100%;
+    align-items: center;
+  
+}
+
+
+
+
+
+
+form .button .b{
+    
+     margin-top:10px;
+    margin-right:290px; 
+    height:40px;
+    width:140px;
+ 
+   
+
+}
+.button{
+    padding-left: 270px; 
+
+}
+
+.b{
+    height:100%;
+    width:100%;
+    border:none;
+    border-radius: 5px;
+    color:#fff;
+    font-weight: 500px;
+    font-size:16px;
+    background: linear-gradient(135deg,#8360c3,#2ebf91);
+    letter-spacing: 1px;
+}
+
+.b:hover{
+    background: linear-gradient(-135deg,#11998e,#38ef7d);
+}
+
+@media (max-width: 584px) {
+    .contianer{
+        max-width:100%;
+    }
+    form .user_details .input-details{
+        margin-bottom:  15px;
+        width: 100px;
+    }
+    .container form .user_details{
+        max-height:300px;
+        overflow-y: scroll;
+    }
+    .user_details::-webkit-scrollbar{
+        width:0;
+
+    }
+    
+}
+
